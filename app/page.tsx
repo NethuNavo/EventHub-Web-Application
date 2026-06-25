@@ -138,7 +138,7 @@ export default function HomePage() {
   return (
     <main className="min-h-screen bg-[#050505] px-5 py-10 sm:px-8 lg:px-16 text-slate-100 font-inter">
       <div className="mx-auto max-w-7xl">
-        <header className="mb-10 flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+        <header className="mb-10 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <div className="flex items-center gap-4">
             <div className="relative h-16 w-16 overflow-hidden rounded-full border border-white/10 bg-white/5 shadow-[0_0_0_1px_rgba(212,175,55,0.12)]">
               <Image src="/asset/Logo.png" alt="Event Hub logo" fill sizes="64px" className="object-cover" />
@@ -151,7 +151,7 @@ export default function HomePage() {
 
         </header>
 
-        <div className="grid gap-8 lg:grid-cols-[1.7fr_0.95fr]">
+        <div className="grid gap-8 md:grid-cols-[1.7fr_0.95fr]">
           <div className="glass-panel p-8 shadow-[0_24px_80px_rgba(0,0,0,0.45)]">
             <div className="mb-8 grid gap-4">
               <div className="inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs uppercase tracking-[0.35em] text-gold-soft">
@@ -159,14 +159,14 @@ export default function HomePage() {
                 <span>Personal Information</span>
               </div>
               <div>
-                <h1 className="text-5xl font-playfair font-semibold tracking-tight text-white">Reserve your seat</h1>
-                <p className="mt-3 text-3xl italic text-gold">at the event</p>
+                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-playfair font-semibold tracking-tight text-white">Reserve your seat</h1>
+                <p className="mt-3 text-xl sm:text-2xl lg:text-3xl italic text-gold">at the event</p>
               </div>
               <p className="max-w-2xl text-slate-400">Complete the form below. A confirmation will be dispatched to your inbox and our team notified immediately upon submission.</p>
             </div>
 
             <form onSubmit={handleSubmit} className="space-y-8">
-              <section className="space-y-6 rounded-[28px] border border-white/10 bg-slate-950/50 p-6">
+              <section className="space-y-6 rounded-[28px] border border-white/10 bg-slate-950/50 p-4 sm:p-6">
                 <div className="flex items-start justify-between gap-4">
                   <div>
                     <p className="text-xs uppercase tracking-[0.35em] text-gold-soft">01 Personal Information</p>
