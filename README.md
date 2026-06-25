@@ -1,44 +1,50 @@
-# Event Hub Registration
+# 🚀 Event Hub Registration
 
-A Next.js registration form with responsive Tailwind UI, frontend validation, MongoDB persistence, and Nodemailer email notifications.
+A modern **Next.js event registration system** with a responsive Tailwind UI, real-time form validation, MongoDB Atlas database integration, and automated email notifications using Nodemailer.
 
-## Setup
+🔗 **Live Demo:**  
+https://event-hub-web-application.vercel.app/
 
-1. Install dependencies:
+---
 
+## ✨ Overview
+
+Event Hub Registration is a full-stack web application designed to collect event registrations efficiently. It provides a smooth user experience with instant validation, secure database storage, and automated email notifications for administrators.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** Next.js (App Router), React, Tailwind CSS  
+- **Backend:** Next.js API Routes  
+- **Database:** MongoDB Atlas  
+- **Email Service:** Nodemailer (SMTP - Gmail)  
+- **Deployment:** Vercel  
+
+---
+
+## ⚡ Features
+
+- 📱 Fully responsive modern UI (mobile + desktop optimized)
+- ⚡ Real-time form validation with instant feedback
+- 🗄️ MongoDB Atlas integration for secure data storage
+- 📧 Automated email notifications to admin on new registration
+- 🌙 Clean dark-themed UI design
+- 🚀 Fast performance with Next.js optimization
+- 🔒 Secure environment variable configuration
+
+---
+
+## 📸 Project Preview
+
+Live Application:  
+https://event-hub-web-application.vercel.app/
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1. Clone the repository
 ```bash
-npm install
-```
-
-2. Create a `.env` file in the project root with:
-
-```env
-MONGODB_URI=your_mongodb_atlas_connection_string
-MONGODB_DB=eventhub
-MONGODB_DNS_SERVERS=8.8.8.8,1.1.1.1
-SMTP_HOST=smtp.gmail.com
-SMTP_PORT=587
-SMTP_USER=your_gmail_address@gmail.com
-SMTP_PASSWORD=your_gmail_app_password
-ADMIN_EMAIL=your_email@example.com
-```
-
-If your environment cannot resolve Atlas SRV records, this will force Node to use public DNS servers for MongoDB lookup.
-
-> For Gmail SMTP, you must use an app password if you have 2-step verification enabled. Regular Gmail login credentials are usually rejected by Google SMTP.
-
-3. Run locally:
-
-```bash
-npm run dev
-```
-
-4. Open: `http://localhost:3000`
-
-## Features
-
-- Responsive dark UI optimized for desktop and mobile
-- Real-time field validation with inline feedback
-- Email notification to developer/admin on successful submission
-- Stores submissions in MongoDB Atlas
-- Clear success/error states and loading feedback
+git clone <your-repo-url>
+cd event-hub-registration
