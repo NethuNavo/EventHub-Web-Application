@@ -325,7 +325,7 @@ export default function HomePage() {
             </footer>
           </div>
 
-          <div className="hidden lg:block">
+          <div className="block lg:block mt-6 lg:mt-0">
             <Sidebar event={selectedEvent} />
           </div>
         </div>
